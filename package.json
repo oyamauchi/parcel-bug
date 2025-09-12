@@ -1,14 +1,24 @@
 {
-  "name": "parcel-vanilla-starter",
+  "name": "oyamauchi-parcel-bug",
   "private": true,
   "version": "0.0.0",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "serve dist",
+    "build": "parcel build --target default && cp src/index.html dist"
   },
   "dependencies": {},
   "devDependencies": {
-    "parcel": "^2.14.0"
+    "parcel": "^2.15.4",
+    "serve": "^14.2.5"
+  },
+  "targets": {
+    "default": {
+      "source": [
+        "src/a.js",
+        "src/b.js"
+      ],
+      "outputFormat": "global",
+      "context": "browser"
+    }
   }
 }
