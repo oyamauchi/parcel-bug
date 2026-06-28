@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "parcel": "^2.15.4",
+    "parcel": "2.16.4",
     "serve": "^14.2.5"
   },
   "targets": {
