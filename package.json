@@ -18,8 +18,7 @@
         "src/a.js",
         "src/b.js"
       ],
-      "outputFormat": "global",
-      "context": "browser"
+      "optimize": false
     }
   }
 }
