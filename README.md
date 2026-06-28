@@ -17,7 +17,7 @@ The text on the page is `http://localhost:3000/9Lg9I`. Going to this URL results
 **Workaround:**
 
 1. Delete `"src/b.js"` from the `sources` list in package.json.
-2. `rm -rf .parcel-cache dist`
+2. `yarn clean` (deletes output files and parcel cache)
 3. Repeat the above repro steps.
 
 **Note on the setup**: index.html is intentionally not included in the Parcel build, and is manually copied into the dist dir after building, so that Parcel doesn't touch the `<script>` tag. The bug only happens in the JS file built as its own entry, not in the version that gets built as a dependency of index.html.

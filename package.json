@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "clean": "rm -rf dist .parcel-cache",
     "start": "serve dist",
     "build": "parcel build --target default && cp src/index.html dist"
   },
